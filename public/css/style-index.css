@@ -1,0 +1,264 @@
+:root
+{
+    --dark-color:#232F3E;
+    --header-color:#f45c43;
+    --orange-gradient:linear-gradient(160deg, #eb3349 0%, #f45c43 100%);
+    --element-hover:#f3f1f127;
+    --background:#F0F2F5;
+}
+
+body
+{
+    overflow-x:hidden;
+    background:var(--background) !important;
+}
+
+#adds-slides /* sliders publicité */
+{
+    margin-bottom:-6%;
+    width:100%;
+    height:400px;
+    top:55px;
+}
+
+/* grille publicité */
+#adds-menu { 
+    width:90%;
+    margin-left:5%;
+    position:relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content:center;
+    grid-row-gap: 25px;
+    column-gap:25px;
+    z-index:2;
+    border-radius:5px;
+ }
+
+.add-item /* publicité */
+{
+    width:370px;
+    height:360px;
+    transition:0.2s;
+    background-color:transparent;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.add-item img
+{
+    width:100%;
+    height:90%;
+}
+
+.add-item p.title
+{
+    height:10%;
+    font-size:140%;
+    font-weight:bold;
+    margin:10px;
+}
+
+
+.sponsorblock
+{
+    width:100%;
+    height:360px;
+    padding:5px;
+    justify-content:space-between;
+}
+.sponsorblock div img
+
+{
+    width:60%;
+    height:150px;
+    border-radius:4px;
+}
+
+.sponsoritem
+{
+    height:49%;
+    padding:10px;
+    border-radius:10px;
+}
+
+.sponsoritem:hover
+{
+    background-color:rgba(214, 214, 214, 0.472);
+}
+
+.sponsor-caption
+{
+    width:40%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+
+.sponsor-caption p
+{
+    font-size:120%;
+}
+
+.sponsor-caption a
+{
+    text-decoration:none;
+}
+
+.category /* Catégorie */
+{
+    width:80%;
+    margin-top:20px;
+    margin-bottom:30px;
+    margin-left:10%;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+
+.category-header 
+{
+    width:100%;
+    margin:0;
+}
+
+.category-title
+{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    font-size:140%;
+    margin:0;
+    font-weight:bold;
+}
+
+
+.item1 { /* cellule du slider categorie */
+    width:250px;
+    margin-right:20px;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color: white;
+  }
+
+
+.img-item /* Les images des éléments */
+{
+    width:100%;
+    height:170px;
+    border-radius:4px 4px 0 0;
+}
+
+.item-describe /*  description de l'lément */
+{
+    padding:5px 0 5px 0;
+    text-align: center;
+}
+
+.show-item-btn /* boutton de l'élément */
+{
+    margin-left:10%;
+    width:80%;
+    border-radius:3px;
+    padding:5px 0 5px 0;
+    text-decoration:none;
+    text-align:center;
+}
+
+
+
+.show-item-btn:hover
+{
+   background-color:rgba(226, 226, 226, 0.39);
+    text-decoration:none;
+    
+}
+
+
+  /* les slides des catégories */
+
+/* icon color */
+.flickity-button-icon {
+    color:#000000a1;
+}
+
+.flickity-button-icon:hover {
+    color:#111111d7;
+
+}
+
+.flickity-prev-next-button.previous {
+    left: -40px;
+    background-color:transparent;
+  }
+.flickity-prev-next-button.next {
+    right: -40px;
+    background-color:transparent;
+  }
+
+
+.flickity-prev-next-button.previous:hover {
+
+    background-color:transparent;
+  }
+.flickity-prev-next-button.next:hover {
+
+    background-color:transparent;
+  }
+
+
+  #on-top
+  {
+     background-color:var(--dark-color); 
+     text-align:center;
+     padding:10px 0 10px 0;
+     color:rgb(255, 255, 255);
+     cursor: pointer;
+     width:100%;
+     border:none;
+     
+  }
+  
+  #on-top:hover
+  {
+     opacity:0.8;
+  }
+  
+  #on-top:active
+  {
+     opacity:1;
+  }
+
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    right: 10px;
+    font-size: 18px;
+    z-index:99;
+    border: none;
+    outline: none;
+    background-color:var(--dark-color);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    opacity:0.8;
+  }
+
+
+footer { /* footer de la page */
+    position:relative;
+    height:200px;
+    text-align: center;
+    padding-top:20px;
+    background-color:rgb(211, 211, 211);
+}

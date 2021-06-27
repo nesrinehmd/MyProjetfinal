@@ -1,0 +1,263 @@
+.top-bar
+{
+    width:100%;
+    z-index: 2;
+    position:relative;
+    top:55px;
+    display:flex;
+    background-color:#232F3E;
+}
+#top-menu-bar /*  la berre des cétégorie en haut */
+{
+    width:70%;
+    background-color:#232F3E;
+}
+
+
+#top-menu-bar nav /*  la berre des cétégorie en haut */
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+#top-menu-bar nav a
+{
+    font-size:100%;
+    padding:7px 6px 7px 6px;
+    cursor:pointer;
+}
+
+#top-menu-bar nav a:hover
+{
+    background-color:#f3f1f127;  
+}
+
+#ad-bar
+{
+    width:30%;
+    background-color: #232F3E;
+    text-align:center;
+    color:white;
+    display:block;
+}
+
+
+#modal-menu /* la fenétre modal */
+{
+    width:100%;
+    height:100vh;
+    background-color:#00000085;
+    position:fixed;
+    top: 0;
+    z-index:4;
+    display:none;
+}
+
+#left-menu /* Le menu de gacuhe */
+{
+    position:relative;
+    top:0;
+    width:28%;
+    height:100vh;
+    z-index:4;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+#close-menu /* le boutton de fermeture */
+{
+    position: fixed;
+    top:-25px;
+    left:29%;
+    font-size:300%;
+    cursor: pointer;
+    color:white;
+}
+
+#modal-body
+{
+    overflow-y:auto;
+    
+}
+#modal_header
+{
+    background-color:#232F3E;
+    font-size:140%;
+    font-weight:bold;
+}
+
+
+.cat-accordions { /* les bouttons accrdions */
+    background-color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top:0;
+    display:grid;
+    grid-template-columns:20px auto;
+    grid-template-rows:auto;
+    align-content:center;
+    column-gap:16px;
+    line-height:5px;
+  }
+ 
+  .cat-accordions  span /* les titres */
+{
+    align-self:center;
+    line-height:10px;
+    font-weight:bold;
+ } 
+
+
+ .cat-accordions i /* les titres */
+{
+    justify-self:center;
+    line-height:10px;
+ } 
+
+ .cat-accordions i.dw /* les chevrons */
+{
+    float:right;
+    font-size:80%;
+ } 
+ .cat-accordions.active, .cat-accordions:hover  /* Une fois l'accordion étendu */
+{
+    background-color: #232F3E;
+    color:white;
+}
+
+.panel /* le sous menu */
+{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+.panel nav a
+  {
+    padding:2px 0 2px 0;
+    cursor: pointer;
+    text-decoration:none;
+  }
+
+.panel nav a:hover
+  {
+    color:#f45c43 !important;
+  }
+
+
+.menu-preview
+{
+    width:80%;
+    height:200px;
+    background-color:white;
+    position:absolute;
+    top:35px;
+    display:none;
+    justify-content:space-evenly;
+    padding:10px 0 10px 0;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.11);
+    border-radius:4px;
+}
+
+
+.menu-preview::before
+{
+    content:"";
+    background-color:white;
+    height:10px;
+    width:10px;
+    position: absolute;
+    top:-4px;
+    left:160px;
+    transform: rotate(45deg);
+}
+
+
+#preview02::before
+{
+
+    left:305px;
+}
+
+
+#preview03::before
+{
+
+    left:380px;
+}
+
+
+#preview04::before
+{
+
+    left:460px;
+}
+
+
+#preview05::before
+{
+
+    left:590px;
+}
+
+
+#preview06::before
+{
+
+    left:730px;
+}
+
+
+
+#preview07::before
+{
+
+    left:850px;
+}
+
+
+#preview08::before
+{
+
+    left:980px;
+}
+
+
+
+
+.item-preview
+{
+    width:200px;
+    height:180px;
+}
+
+.item-preview img
+{
+    width:90%;
+    margin-left:5%;
+    height:70%;
+    border-radius:4px;
+}
+
+
+.item-preview a
+{
+    height:20%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    width:100%;
+    text-align: center;
+    text-decoration:none;
+}

@@ -1,0 +1,312 @@
+:root
+{
+    --dark-color:#232F3E;
+    --header-color:#f45c43;
+    --orange-gradient:linear-gradient(160deg, #eb3349 0%, #f45c43 100%);
+    --element-hover:#f3f1f127;
+    --background:#F0F2F5;
+}
+
+
+body
+{
+    overflow-x:hidden;
+    background:var(--background) !important;
+}
+
+#main
+{
+    width:100%;
+    position:relative;
+    top:80px;
+    padding:0 20px 20px 20px;
+}
+
+
+#menu-cat
+{
+    width:80%;
+    margin-left:10%;
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    grid-row:auto;
+    justify-content:center;
+    column-gap:30px;
+    row-gap:20px;
+    color:white;
+}
+
+.cat-item
+{
+    width:250px;
+    height:200px;
+    border-radius:5px;
+    cursor:pointer;
+    flex-direction:column;
+    transition:0.8s;
+}
+
+
+.cat-item:hover
+{
+    transform:scale(1.1);
+}
+
+.cat-item img:hover{opacity:0.6;}
+.cat-item:active{opacity:1;}
+
+.cat-item img 
+{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+
+
+.cat-item p 
+{
+    position:relative;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.472);
+    padding:0 5px 0 5px;
+    visibility:hidden;
+    top:-80px;
+    text-align:center;
+}
+
+.cat-item:hover p
+{
+    visibility:visible;
+    animation:animatep 0.8s;
+}
+@keyframes animatep {
+    from {transform: scale(0);top:-40px} 
+    to {transform: scale(1);top:-80px}
+  }
+
+
+.modal
+{
+    width:100%;
+    height:100%;
+    background-color:#00000085;
+    position:fixed;
+    top: 0;
+    z-index:4;
+    display:none;
+}
+
+.form
+{
+    width:60%;
+    height:90vh;
+    position: absolute;
+    overflow-y:auto;
+    margin-left:20%;
+    background-color:white;
+    padding:10px 20px 10px 20px;
+    display:flex;
+    flex-direction: column;
+    border-radius:3px;
+    margin-top:9vh;
+}
+
+.form span{color:red;}
+
+.form-description {
+    resize: none;
+}
+
+form div
+{
+    margin:10px 0 10px 0;
+}
+
+
+.civilite
+{
+    width:40%;
+    margin:auto;
+    justify-content:space-between;
+}
+
+.duree
+{
+    width:80%;
+    justify-content:space-between;
+}
+
+.coords-space div
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: center;
+    width:50%;
+}
+
+.coords-space div input
+{
+    width:95%;
+}
+
+
+.civilite div
+{
+    width:100px;
+    justify-content: center;
+    align-items:center;
+}
+
+.duree div
+{
+    width:300px;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-title
+{
+    font-weight:bold;
+    text-align:center;
+    font-size:160%;
+    margin:0;
+    line-height:0;
+    padding:20px 0 10px 0;
+}
+
+span.close-cat /* le boutton de fermeture */
+{
+    position: fixed;
+    margin:0;
+    line-height:0;
+    float:right;
+    top:65px;
+    right:220px;
+    font-size:350%;
+    cursor: pointer;
+    color:white;
+}
+
+
+.animate {
+    animation: animatezoom 0.8s;
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  .form-choice
+{
+    display:flex;
+    justify-content:center;
+    margin:10px 0 10px 0;
+}
+
+.pro-choice i,.particular-choice i
+{
+    font-size:150%;
+}
+
+.pro-choice,.particular-choice
+{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+    width:40%;
+    margin:0 10px 0 10px;
+    transition:1s;
+    /*background-color:#18898d38;*/
+}
+
+.choice1,.choice2
+{
+    cursor:pointer;
+}
+
+.animate form button,.animate form a{
+	margin-bottom:40px;
+}
+
+
+
+/* espace filtres */
+
+.pro
+{
+    display:none;
+}
+
+.infos-filtres
+{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:80%;
+    margin:auto;
+    display:none;
+    font-size:110%;
+}
+
+.infos-filtres div
+{
+    justify-items:center;
+    justify-content:center;
+}
+
+
+#form_pro{
+    display:none;
+}
+
+#mob-filtres,#emploi-filtres,#vihecule-checks
+{
+    display:flex;
+}
+
+
+
+#vihecule-filtres
+{
+    display:grid;
+    grid-template-columns:repeat(4, auto);
+    justify-content: space-evenly;
+}
+
+#vihecule-filtres div
+{
+    width:180px;
+    display:flex;
+    flex-direction:column;
+}
+
+#vihecule-filtres .hide_vihecule
+{
+    display:none;
+}
+
+
+
+#fixe-filtres
+{
+    display:none;
+    justify-content: space-evenly;
+}
+
+#smartphone-filtres
+{
+    display:none;
+    grid-template-columns:auto auto auto;  
+    justify-content:space-evenly;
+}
+
+#smartphone-filtres div,#fixe-filtres div
+{
+    width:240px;
+}
+
+
+

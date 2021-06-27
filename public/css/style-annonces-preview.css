@@ -1,0 +1,154 @@
+:root
+{
+    --background:#F0F2F5;
+}
+
+body
+{
+    
+    overflow-x:hidden;
+    background: var(--background) !important;
+}
+
+
+#annonce-page
+{
+    position:relative;
+    top:60px;
+}
+
+
+
+.user-block,.annonce-block
+{
+    padding-left:20px;
+    padding-top:20px;
+    padding-right:20px;
+    background-color:white;
+    padding-bottom:10px;
+}
+
+.user-block
+{
+    margin-top:40px;
+}
+#infos-user
+{
+    flex-grow:0.5;
+    
+}
+
+#contact-user
+{
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    justify-content:center;
+}
+
+#btn-contact
+{
+    width:350px;
+    height:1.2cm;
+    font-size:120%;
+    font-weight:bold;
+}
+
+
+.comment
+{
+    margin-bottom:10px;
+    padding:10px;
+}
+
+.comment img
+{
+    width:40px;
+    margin-right:5px;
+}
+
+.comment p
+{
+    margin:0;
+}
+
+.comment div span
+{
+    font-weight:bold;
+}
+
+#comment-post form textarea
+{
+    width:90%;
+    height:1.1cm;
+    resize:none;
+    border-radius:5px;
+}
+
+#comment-post form .btn
+{
+    width:9%;
+    height:1.1cm;
+    margin-left:1%;
+}
+
+#comment-post div form
+{
+    width:100%;
+}
+
+
+#images-container
+{
+    width:80%;
+    margin:auto;
+}
+#miniatures
+{
+    width:60%;
+    margin: auto;
+    cursor: pointer;
+    
+}
+
+#annonces-images
+{
+    margin-bottom: 10px;
+}
+  
+#annonces-images img {
+    width: 100%;
+    height: 350px;
+}
+ 
+#miniatures img 
+{
+    height: 80px;
+    width: 100px;
+    margin-right:10px;
+}  
+
+#miniatures .carousel-cell.is-nav-selected
+{
+    opacity:0.6;
+}
+
+#annonces-images .flickity-prev-next-button.previous {
+    background-color:transparent;
+    left:60px;
+  }
+#annonces-images .flickity-prev-next-button.next {
+    background-color:transparent;
+    right:60px;
+  }
+
+
+#annonces-images .flickity-prev-next-button.previous:hover {
+
+    background-color:transparent;
+  }
+#annonces-images .flickity-prev-next-button.next:hover {
+
+    background-color:transparent;
+  }
+  
